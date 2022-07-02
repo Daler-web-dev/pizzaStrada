@@ -1,93 +1,51 @@
-// let a = prompt('wraite ur name').toLowerCase().trim()
+// let hours = new Date().getHours()
+// let min = new Date().getMinutes()
+// let day = new Date().getDay()
+// let month = new Date().getMonth()
+// let seconds = new Date().getSeconds()
 
-// if(a === 'alex') {
-//     console.log('Hello ' + a);
+// console.log(`${hours}:${min}`);
+// console.log(seconds);
+// // console.log(new Date().getTime());
+
+// let name = prompt('what is ur name?')
+// let isDone = confirm('did u do ur hometask?')
+
+// if(isDone === true) {
+//     let score = +prompt('your score is')
+    
+//     if(score >= 7) {
+//         alert(`congratulations mr/ms ${name} your score is ${score}`)
+//     } else if (score >= 4) {
+//         alert(`not bad your score is ${score}`)
+//     } else if(score < 4) {
+//         alert('dvoyshnik')
+//     }
 // } else {
-//     console.log('sorry mr ' + a);
-// }
-
-// let num = prompt('number')
-
-// console.log(num % 2 === 0);
-
-// if(num % 2 === 0) {
-//     console.log('even');
-// } else {
-//     console.log('odd');
-// }
-
-// let name = 'zoir'
-// let age = 19
-
-// if(name === 'alex' && age >= 18) {
-//     console.log('welcome bratishka');
-// } else {
-//     console.log('uyga bor');
+//     alert(`А голову дома не забыл? а ${name}`)
 // }
 
 
 
-// let guests_list = 'zoir timur diyor shaxzod muxammad jonibek'
+let name = prompt('what is ur name?').toLowerCase().trim() // AMir
 
+if(name[0] === 'a') {
+    let age = prompt('how old are u?')
 
+    if(age >= 20 && age <= 40) {
+        let money = prompt('how much money do u have?')
 
-// if(guests_list.includes(name)) {
-//     alert('welcome')
-// } else {
-//     alert('go home')
-// }
+        if(money >= 100) {
+            alert(`
+                Welcome to our club mr/ms ${name}
+            `)
+        } else {
+            alert(`sorry mr/ms ${name}`)
+        }
 
-// let name = prompt('what is your name?') // muxammad
-
-// if(name == 'zoir') {
-//     alert('Salam zoirka')
-// } else if(name === 'timur') {
-//     alert('Hi Tima')
-// } else if(name === 'diyor') {
-//     alert('Diyorka kak vi')
-// } else {
-//     alert('Вы кто ?')
-// }
-
-// let a = +prompt('a')
-// let m = prompt('+ - * /')
-// let b = +prompt('b')
-
-
-// if(m === "+") {
-//     console.log(a + b);
-// } else if(m === "-") {
-//     console.log(a - b);
-// }  else if(m === "*") {
-//     console.log(a * b);
-// }  else if(m === "/") {
-//     console.log(a / b);
-// }
-
-// switch (m) {
-//     case "+":
-//         console.log(a + b);
-//         break;
-//     case "-":
-//         console.log(a - b);
-//         break;
-//     case "*":
-//         console.log(a * b);
-//         break;
-//     case "/":
-//         console.log(a / b);
-//         break;
-//     default:
-//         break;
-// }
-
-
-let day = prompt('') // 
-
-// должен сказать какая сейчас декада 
-
-
-let month = prompt('month')
-
-
-// число месяца и код должен какой сейчас сезон
+    } else {
+        alert(`sorry mr/ms ${name}`)
+    }
+} else {
+    alert(`sorry mr/ms ${name}`)
+}
